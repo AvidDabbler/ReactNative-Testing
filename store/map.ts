@@ -3,6 +3,7 @@ import { MapStateType } from '../types';
 
 const initialState: MapStateType = {
   loaded: false,
+	name: 'walter',
   layers: [],
   map: null,
   mapView: null,

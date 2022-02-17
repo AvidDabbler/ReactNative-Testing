@@ -6,3 +6,5 @@ export const store = configureStore({
     map: mapSlice.reducer
   }
 });
+
+export {mapSlice}

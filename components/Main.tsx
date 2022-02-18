@@ -1,28 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, View } from 'react-native';
 
-import { mapSlice } from '../store';
+import { mapController } from '../controllers';
 
 export function Main() {
-  const dispatch = useDispatch();
-  const changeName = () => {
-    dispatch(mapSlice.actions.setValue({ key: 'name', value: 'Maddie' }));
-  };
   return (
     <View style={styles.container}>
-      <Button title="Change the Name" onPress={changeName} />
-      <StatusBar style="auto" />
+      <Button title='Change Location' onPress={mapController.changeLocation}/>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    flex: 0.25,
+    marginTop: '8%',
+    marginBottom: '19%',
+    marginHorizontal: '10%',
+    borderRadius: 10,
+    backgroundColor: '#000',
     alignItems: 'center',
+    color: '#fff',
     justifyContent: 'center',
   },
 });

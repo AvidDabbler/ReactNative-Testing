@@ -5,6 +5,7 @@ export interface MapStateType {
   map: any;
   mapView: any;
   routes: any[];
+  busStops: any[];
   vehicles: any[];
   selectedRoute: any;
   selectedVehicle: any;

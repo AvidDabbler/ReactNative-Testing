@@ -1,17 +1,16 @@
+import React from 'react';
+
 import { Provider } from 'react-redux';
-import { Text, View, StyleSheet } from 'react-native'
-import { Main } from './components';
+import { StyleSheet } from 'react-native'
+import { Main, Map } from './components';
 
 import { store } from './store';
-import { mapSlice } from './store/map';
 
 export default function App() {
+
   return (
     <Provider store={store}>
-      <View style={styles.container}>
-              <Text>hey</Text>
-
-      </View>
+      <Map />
       <Main />
     </Provider>
   );

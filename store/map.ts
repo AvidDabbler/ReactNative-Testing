@@ -9,6 +9,7 @@ const initialState: MapStateType = {
   mapView: null,
   routes: [],
   vehicles: [],
+  busStops: [],
   selectedRoute: null,
   selectedVehicle: null,
   selectedStop: null,

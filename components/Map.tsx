@@ -1,6 +1,6 @@
 import React , {useEffect, useState} from 'react';
 import { useSelector } from 'react-redux';
-import styled from 'styled-components/native';
+import styled from 'styled-components/native'; // eslint-disable-line no-eval
 import { Image, StyleSheet, View, Text } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import { mapController } from '../controllers';
@@ -24,10 +24,10 @@ export function Map() {
     mapController.getStops();
   }, [])
 
-  useEffect(() => {
-    if(busStops.length === 0) return;
-    console.log(busStops[0].geometry.coordinates);
-  }, [busStops])
+  // useEffect(() => {
+  //   if(busStops.length === 0) return;
+  //   console.log(busStops[0].geometry.coordinates);
+  // }, [busStops])
 
   const onRegionChange = (region: any) => {
     // console.log(region)
